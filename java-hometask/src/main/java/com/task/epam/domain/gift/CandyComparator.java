@@ -6,14 +6,11 @@ public class CandyComparator implements Comparator<Candy> {
 
 	public int compare(Candy o1, Candy o2) {
 		// TODO Auto-generated method stub
-		if (o1.getBrandNameOfCandy() != o2.getBrandNameOfCandy())
+		System.out.println(o1.getBrandNameOfCandy());
+		if (o2.getBrandNameOfCandy() == o1.getBrandNameOfCandy())
+			return 0;
+		else
 			return 1;
-		if (o1.getCountOfCandy() != o2.getCountOfCandy())
-			return 1;
-		if (o1.getPriceOfEachCandy() != o2.getPriceOfEachCandy())
-			return 1;
-		
-		return 0;
 
 	}
 

@@ -12,6 +12,15 @@ public class SweetProcessingUtility {
 		return chocolates;
 
 	}
+	
+	
+	public static List<Candy> sortCandyByBrandName(List<Candy> candies) {
+
+		Collections.sort(candies, new CandiesSort());
+
+		return candies;
+
+	}
 
 	public static boolean findTheCandy(List<Candy> candies, Candy key) {
 		

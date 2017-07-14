@@ -7,11 +7,11 @@ public class GiftApp {
 
 	public static void main(String[] args) {
 
-		Candy candyOne = new Candy(5, 5, "Nice", 1);
-		Candy candyTwo = new Candy(6, 4, "Yellow", 10);
-		Candy candyThree = new Candy(4, 15, "Orange", 20);
-		Candy candyFour = new Candy(3, 13, "Black", 15);
-		Candy candyFive = new Candy(1, 14, "Pink", 4);
+		Candy candyOne = new Candy(5, 5, "E", 1);
+		Candy candyTwo = new Candy(6, 4, "A", 10);
+		Candy candyThree = new Candy(4, 15, "C", 20);
+		Candy candyFour = new Candy(3, 13, "D", 15);
+		Candy candyFive = new Candy(1, 14, "F", 4);
 
 		Chocolate chocolateOne = new Chocolate(10, 3, "Bull", 2);
 		Chocolate chocolateTwo = new Chocolate(12, 3, "Apple", 3);
@@ -51,8 +51,15 @@ public class GiftApp {
 			
 		}
 		
+		SweetProcessingUtility.sortCandyByBrandName(candies);
+		for (Candy candy : candies) {
+			
+			System.out.println(candy);
+			
+		}
 		
-		System.out.println("Candy Found:"+SweetProcessingUtility.findTheCandy(candies, candyFive));
+		Candy candyKey = new Candy(1, 14, "F", 4);
+		System.out.println("Candy Found:"+SweetProcessingUtility.findTheCandy(candies, candyKey));
 
 	}
 

@@ -40,33 +40,12 @@ public class Candy extends Sweet{
 	}
 
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		
-		result = prime * result + countOfCandy;
-		result = prime * result + priceOfEachCandy;
-		return result;
+	public String toString() {
+		return "Candy [countOfCandy=" + countOfCandy + ", brandNameOfCandy=" + brandNameOfCandy + ", priceOfEachCandy="
+				+ priceOfEachCandy + "]";
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Candy other = (Candy) obj;
-		if (brandNameOfCandy != other.brandNameOfCandy)
-			return false;
-		if (countOfCandy != other.countOfCandy)
-			return false;
-		if (priceOfEachCandy != other.priceOfEachCandy)
-			return false;
-		
-		return true;
-	}
+	
 	
 	
 
